@@ -1,7 +1,8 @@
-/* CSS BY YOUR NAME */
+/* CSS BY DAVID KALARICKAL */
 
 /* IMPORTED FONTS*/
 /* IMPORT "INTER" FROM GOOGLE FONTS"
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 /* CSS RESET */
 /* http://meyerweb.com/eric/tools/css/reset/
@@ -64,17 +65,58 @@ table {
 
 /* GLOBAL STYLES (MOBILE FIRST (SMALL) */
 
+body{
+    font-family: "Inter", sans-serif;
+}
+
+h1{
+    font-size: 2.5rem;
+    font-weight: bold;
+    position: relative;
+    left: 40px;
+}
+
+h2{
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+/* ADD FLOATING SVG LOGO BEFORE THE H1 */
+h1::before {
+    position: absolute;
+    content: "";
+    left:-3.5rem;
+    width: 3.75rem;
+    height: 3.75rem;
+    background: url('images/vanguard-logo.svg') no-repeat center/contain;
+}
+
+header #navigation{
+    background-color: var(--black);
+    color: var(--blue);
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+    padding: 40px;
+}
+
+header #navigation a{
+    text-decoration: none;
+    color: var(--blue);
+}
+
 /* MIN-WIDTH OF THE PAGE SHOULD NOT GO BELOW 400PX */
 
 /* ADD A DIV WITH THE CLASS OF CONTAINER TO EVERY CONTENT CONTAINER THIS IS ALLOW THE BASE ELEMENTS TO BE 100% WIDTH, BUT CONSTRAIN THE ACTUAL CONTENT TO 90% */
 .container {
     width: 90%;
     max-width: 1200px;
+    min-width: 400px;
     margin: 0 auto;
 }
 
 /* ADD TO "INNOVATION & INVESTMENT SECTION (Photo by Kevin Matos on Unsplash) */
- {
+#banner{
     background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url('images/vanguard-hero.jpg') no-repeat center center/cover;
     height: 80vh;
     display: grid;
@@ -82,18 +124,54 @@ table {
     text-align: center;
     padding: 1rem;
     overflow: hidden;
+    /* width: 100%; */
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto;
+    align-content: center;
+    justify-content: center;
+    color: var(--white);
 }
 
-/* ADD FLOATING SVG LOGO BEFORE THE H1 */
- {
-    content: "";
 
-    left:-.5rem;
-    width: 3.75rem;
-    height: 3.75rem;
-    background: url('images/vanguard-logo.svg') no-repeat center/contain;
-
+#banner div{
+    margin: 20px;
+    backdrop-filter: blur(10px);
 }
+
+#banner h2{
+    padding-bottom: 20px;
+    padding-top: 30px;
+}
+
+#banner p{
+    padding-bottom: 10px;
+    line-height: 25px;
+}
+
+#banner button{
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    background-color: var(--blue);
+    color: var(--white);
+    border: none;
+}
+
+#intro{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#intro h2{
+    padding: 15px;
+}
+
+#intro p{
+    line-height: 25px;
+}
+
 /* THIS ONE IS DONE FOR YOU */
 #bar-chart {
     display: grid;
@@ -113,7 +191,7 @@ table {
     background: var(--charcoal);
     border-radius: 10px;
     position: relative;
-    transition: ;
+    /* transition: ; */
     height: 0;
 }
 /* THIS ONE IS DONE FOR YOU */
