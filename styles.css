@@ -188,7 +188,7 @@ header #navigation a{
     grid-template-rows: auto auto auto auto auto auto auto;
     grid-template-areas: 
     'offer-heading'
-    'growth'
+    'grow'
     'investment'
     'acceleration'
     'transformation'
@@ -203,8 +203,8 @@ header #navigation a{
     padding: 15px;
 }
 
-#offer #growth{
-    grid-area: growth;
+#offer #grow{
+    grid-area: grow;
 }
 
 #offer #investment{
@@ -403,7 +403,7 @@ footer #site-end{
         grid-template-rows: auto auto auto auto;
         grid-template-areas: 
         'offer-heading offer-heading'
-        'growth investment'
+        'grow investment'
         'acceleration transformation'
         'exclusive corporate'
         ;
@@ -428,7 +428,7 @@ footer #site-end{
         grid-template-rows: auto auto auto;
         grid-template-areas: 
         'offer-heading offer-heading offer-heading'
-        'growth investment acceleration'
+        'grow investment acceleration'
         'transformation exclusive corporate'
         ;
     }
